@@ -1,0 +1,85 @@
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4;
+}
+
+.game-container {
+    text-align: center;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 350px;
+}
+
+h1 {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.game-info p {
+    font-size: 1.1em;
+    margin: 10px 0;
+}
+
+#turn-indicator {
+    font-weight: bold;
+    margin-top: 10px;
+    color: #007BFF;
+}
+
+.actions {
+    margin: 20px 0;
+}
+
+.actions input, .actions button {
+    padding: 10px;
+    margin: 5px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+}
+
+.actions button {
+    cursor: pointer;
+    background-color: #007BFF;
+    color: white;
+    transition: background 0.3s;
+}
+
+.actions button:hover {
+    background-color: #0056b3;
+}
+
+.actions input {
+    width: 100%;
+    border: 1px solid #ddd;
+    background: #fafafa;
+}
+
+#game-log {
+    margin-top: 20px;
+    font-size: 0.9em;
+    max-height: 200px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background: #fafafa;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.screen {
+    display: none;
+}
+
+.screen.active {
+    display: block;
+}
